@@ -11,7 +11,11 @@ Puis accéder à la variable dans le html plus bas.
 
 <?php
 $titre = "Connexion";
-$age = "34 ans"
+$age = 34;
+$p1 = "Pierre";
+$p2 = "Gael";
+// php etant non type, on peut redefinir une variable avec un autre type
+// $age = "trente-quatre";
 ?>
 
 <!DOCTYPE html>
@@ -23,6 +27,7 @@ $age = "34 ans"
     <title><?=$titre?></title>
 </head>
 <body>
-    <h1>Vous avez <?=$age?> </h1>
+    <h1>Vous avez <?=$age?> ans</h1>
+    <h2><?= "Prénom 1 : ".$p1." Prénom 2 : ".$p2 ?> </h2>
 </body>
 </html>
