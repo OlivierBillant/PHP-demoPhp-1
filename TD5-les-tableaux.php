@@ -24,3 +24,13 @@ $classe["QCDA_007F"] = array("Yannick", "Dominique", "Jérome", "Christelle");
 
 //L affichage de l array $classe contiendra 2 tableaux
 var_dump($classe);
+
+
+//Le tableau mixte
+//Va mélanger les types dans les indices qui vont s'incrementer apres le dernier rempli.
+
+//Pour un tableau multidimensionnel, on passera un tableau enfant à un tableau parental.
+
+//L'accès aux éléments d'un tableau se fera par un indice dans les crochets.
+
+var_dump($classe["QCDA_006F"][5]);
