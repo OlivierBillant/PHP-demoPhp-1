@@ -8,7 +8,7 @@
 ?>
 
 <!-- Afficher directement dans echo -->
-<?= ... ?>
+<?= "..." ?>
 
 <!-- Attention on ne peut pas créer le projet n'importe ou.
 il faudra aller directement dans le dossier d'installation de Wamp -->
