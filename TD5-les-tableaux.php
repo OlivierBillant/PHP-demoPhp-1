@@ -34,3 +34,7 @@ var_dump($classe);
 //L'accès aux éléments d'un tableau se fera par un indice dans les crochets.
 
 var_dump($classe["QCDA_006F"][5]);
+
+//Fonctions utiles :
+//explode()
+//implode()
