@@ -1,6 +1,7 @@
 <?php
 $a = 12;
 $b = "Plop";
+$uneString = "uneString";
 ?>
 
 
@@ -33,12 +34,28 @@ $b = "Plop";
     }
     ?>
 
-    Le transtypage explicite est possible avec la fonction : settype()
-    => Peu utilisé
-    Le transtypage implicite se fera si l'on melange des variables :
-    $a = "2 fingers";
-    $b = 2 * $a;
-    Donnera 4 car $a sera interprétée comme 2.
+<br> Le transtypage explicite est possible avec la fonction : settype()
+<br> => Peu utilisé
+<br>  Le transtypage implicite se fera si l'on melange des variables :
+<br>$a = "2 fingers";
+<br>$b = 2 * $a;
+<br>Donnera 4 car $a sera interprétée comme 2.
+<br>
+<br>On trouvera également : 
+<br>- strtoupper
+<br>- strtolower
+<br>- ucwords
+<br>- ucfirst
+<br>- number_format()
+<br>
+<br>Les fonctions strpos rechreche un caractere dans une chaine:
+<br>Dans la string "uneString" :
+<br>- strpos de n : <?= strpos($uneString, "n") ?> 
+<br>- strrpos de n : <?= strrpos($uneString, "n") ?>;  R prend la dernière occurence
+<br>- stripos de s: <?= stripos($uneString, "s") ?>;  I omet la casse
+<br>- strripos : <?= strripos($uneString, "s") ?>;  RI les deux
+
+
     </p>
 </body>
 </html>
