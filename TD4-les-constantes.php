@@ -11,3 +11,7 @@ const DIR = "C:\wamp64\www\PHP-demo1";
 var_dump(PI);
 var_dump(ROOT);
 var_dump(DIR);
+
+if(defined("PI")){
+    echo var_dump(PI);
+}
