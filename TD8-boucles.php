@@ -1,5 +1,5 @@
 <!-- 
-Les boucles sont similaires à celles du en java    
+Les boucles sont similaires à celles  en java    
 Le foreach : foreach ($tableau as $valeur)
  -->
 
