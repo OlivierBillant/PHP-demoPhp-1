@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    
+    <title>Les formulaires</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Les formulaires</h1>
+        <p>
+            <br> Pour récupérer les données d'une requête POST : $_POST ou GET : $_GET
+            <br> qui vont remplacer les "getParameter" vus en JEE
+        </p>
+
+
+        <div class="row">
+            <form class="col s12" action="TD14-les-formulaires-php.php" method="post">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input placeholder="email" name="email" type="text" class="validate">
+                        <label for="email"></label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input placeholder="password" name="password" type="text" class="validate">
+                        <label for="password"></label>
+                    </div>
+                </div>
+                <br>
+                <button class="btn bg-primary text-white " type="submit" name="action">Valider </button>
+            </form>
+        </div>
+        <p>
+            Une autre option possible consiste à combiner en un seul fichier le php et le html.
+            <br>Toutefois, il est impératif de vérifier un if(isset($_POST)) au préalable 
+            <br>avant d'en gérer l'affichage.
+        </p>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+</body>
+
+</html>
