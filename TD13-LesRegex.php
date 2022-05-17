@@ -3,6 +3,7 @@ $regex = "/(\d{1,2})\-(\d{1,2})\-(\d{4})/";
 $chaine = "Aujourd'hui, la date est le 17-05-2022 !";
 preg_match($regex, $chaine, $resultat);
 // var_dump($resultat);
+
 $motif = "/(\d{1,2})\/(\d{1,2})\/(\d{4})/";
 $avant = "01/04/2014";
 $apres = preg_replace($motif, "$3-$2-$1", $avant);
