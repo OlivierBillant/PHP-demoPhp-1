@@ -1,5 +1,6 @@
 <?php
 
+namespace App\TD15;
 abstract class Personne{
     private $prenom;
     private $nom;

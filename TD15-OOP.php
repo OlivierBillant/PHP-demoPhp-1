@@ -18,7 +18,7 @@
             <!-- Personne étant devenu une classe abstraite, transforme Steve en client -->
             <?php
             require_once "TD15-client.class.php";
-            $Steve = new Client("Steve", "Lucas", 33, "Rue de Brest", "07");
+            $Steve = new App\TD15\Client("Steve", "Lucas", 33, "Rue de Brest", "07");
             ?>
             <br> Nom : <?= $Steve->getNom() ?>
             <br> Prénom : <?= $Steve->getPrenom() ?>
@@ -37,7 +37,7 @@
         </p>
         <p>
             <?php
-            $John = new Client("John", "Doe", 33, "Rue de Paris", "06");
+            $John = new App\TD15\Client("John", "Doe", 33, "Rue de Paris", "06");
             ?>
 
             <br> Nom : <?= $John->getNom() ?>
@@ -51,25 +51,53 @@
     <div class="container">
         <h4>Les attributs statiques</h4>
         <p>
-           On les appellera par nomClasse::getFonction();
+            On les appellera par nomClasse::getFonction();
         </p>
     </div>
 
     <div class="container">
         <h4>Les classes abstraites</h4>
         <p>
-           Le mot clef sera toujours abstract. 
-           <br> On pourra l'appliquer aux fonctions en le précisant dans le prototype.
+            Le mot clef sera toujours abstract.
+            <br> On pourra l'appliquer aux fonctions en le précisant dans le prototype.
 
-           <?php 
-           require_once "TD15-vendeur.class.php";
-           $Billy = new Vendeur("Billy", "Butch", 34, "32k");
-           ?>
-           <br> Nom : <?= $Billy->getNom() ?>
-           <br> Prénom : <?= $Billy->getPrenom() ?>
-           <br>Age : <?= $Billy->getAge() ?>
-           <br>Chiffre d affaire : <?= $Billy->getChiffreAffaire() ?>
-           
+            <?php
+            require_once "TD15-vendeur.class.php";
+            $Billy = new App\TD15\Vendeur("Billy", "Butch", 34, "32k");
+            ?>
+            <br> Nom : <?= $Billy->getNom() ?>
+            <br> Prénom : <?= $Billy->getPrenom() ?>
+            <br>Age : <?= $Billy->getAge() ?>
+            <br>Chiffre d affaire : <?= $Billy->getChiffreAffaire() ?>
+        </p>
+    </div>
+
+    <div class="container">
+        <h4>Les interfaces</h4>
+        <p>
+            Le mot clef est toujours interface.
+            <br> Elle est appelée par "implements"
+        </p>
+    </div>
+
+    <div class="container">
+        <h4>Les exceptions</h4>
+        <p>
+            Seront levées par "throws new Exception('Message')"
+        </p>
+    </div>
+
+    <div class="container">
+        <h4>Les espaces de nom</h4>
+        <p>
+            Sont des packages qui permettent de regrouper les classes.
+            <br> On appelera les classes de la facon suivante : 
+            <br> $Steve = new App\TD15\Client("Steve", "Lucas", 33, "Rue de Brest", "07");
+            <br>Pour éviter d'avoir à preciser systématiquement le chemin on pourra utiliser
+            <br>"use App\namespace\class" qui permettra d'importer directement le package.
+            <br>
+            <br>L'utilisation d'aliases avec "as" permet de faciliter les appels
+            <br>Ex : "use App\namespace\class as defaultPathway"
         </p>
     </div>
 </body>
