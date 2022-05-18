@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    
+
     <title>Les formulaires</title>
 </head>
 
@@ -39,8 +39,24 @@
         </div>
         <p>
             Une autre option possible consiste à combiner en un seul fichier le php et le html.
-            <br>Toutefois, il est impératif de vérifier un if(isset($_POST)) au préalable 
+            <br>Toutefois, il est impératif de vérifier un if(isset($_POST)) au préalable
             <br>avant d'en gérer l'affichage.
+        </p>
+        <p>
+            Des méthodes permettant de filtrer les balises : filter_var et filter_input.
+            <br>Un exemple de syntaxe :
+            <br>$email = "olivier@guilben.bzh";
+            <br>
+            <br>if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
+            <br> echo("$email is a valid email address");
+            <br> } else {
+            <br> echo("$email is not a valid email address");
+            <br>}
+
+            <br>Il est possible de récupérer plusieurs valeurs en même temps avec les variants filter_var_array
+            <br>
+            <br>En utilisant une appellation différente de name="nom[key]" on pourra passer des valeurs en
+            <br>tableau directement
         </p>
     </div>
 
