@@ -1,6 +1,6 @@
 <?php
 
-class Personne{
+abstract class Personne{
     private $prenom;
     private $nom;
     private $age;
@@ -19,6 +19,9 @@ class Personne{
         echo "<br>L'objet est détruit à la fin du dernier appel php de la page";
         echo "<br>Sauf si l'on appelle unset";
     }
+
+    public abstract function parler();
+
     /**
      * Get the value of prenom
      */ 
