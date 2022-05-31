@@ -52,6 +52,7 @@ if (!isset($_COOKIE['user'])) {
             <br>Pour <b>consulter</b> on utilisera $_SESSION['nom']
             <br>
             <br>Il faut bien penser à créer des fonctions de desctruction des sessions
+            <br>En effet, les sessions peuvent être facilement dérobées par une simple inspection
 
         </p>
     </div>
